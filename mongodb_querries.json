@@ -1,0 +1,41 @@
+use database
+
+show dbs
+
+db.createCollection('myCollection')
+
+db.dropdatabase()
+
+db.mycollecttion.drop()
+
+//file adding command
+db.myData.insertOne(
+{
+    name : 'Ritvik' ,
+    age : 23,
+    gender: 'male',
+    phn number : 8003277660,
+    address: 'jaipur',
+    
+
+})
+
+db.myData.insertMany(
+[{
+    name : 'Ritvik' ,
+    age : 23,
+    gender: 'male',
+    phn number : 8003277660,
+    address: 'jaipur'
+    
+},
+{
+    
+    name : 'Ritv' ,
+    age : 23,
+    gender: 'male',
+    phn number : 80032776,
+    address: 'jaur'
+    
+}]
+)
